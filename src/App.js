@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Controls from "./Controls";
 import Pads from "./Pads";
 
@@ -133,6 +133,7 @@ function App() {
       setCurrentBank(bankOne);
     }
     setIsOn((prevState) => !prevState);
+    setIsBankOne(true);
   };
 
   const switchBank = () => {
