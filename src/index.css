@@ -17,12 +17,21 @@ body {
 
 .drumMachine {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 2rem;
 
   border: 5px solid #6B818C;
-  width: 650px;
   padding: 2rem;
   background: #EBF2FA ;
+}
+
+@media (min-width: 650px) {
+  .drumMachine{ 
+    flex-direction: row;
+    width: 650px;
+    align-items: initial;
+  }
 }
 
 .drumPads {

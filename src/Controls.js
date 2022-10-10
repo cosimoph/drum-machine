@@ -29,7 +29,7 @@ const Controls = ({
             />
           </div>
           <div className="bank">
-            <h2>Bank</h2>
+            <h2>{isBankOne ? "Heater Kit" : "Smooth Piano Kit"}</h2>
             <div className={`switch ${!isBankOne && "on"}`}>
               <div className="switch-click" onClick={switchBank}></div>
             </div>
